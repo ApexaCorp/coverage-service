@@ -70,9 +70,6 @@
     <Compile Include="IApexaCoverage.cs" />
     <Compile Include="DataContracts\Coverage.cs" />
     <Compile Include="DataContracts\CoverageDetails.cs" />
-    <Compile Include="DataContracts\Entity.cs" />
-    <Compile Include="DataContracts\Company.cs" />
-    <Compile Include="DataContracts\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
