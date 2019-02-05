@@ -31,6 +31,6 @@ namespace ApexaCoverage
         /// <param name="AuthenticationKey">API Key used for authorization.</param>
         /// <returns>Coverage details.</returns>
         [OperationContract]
-        CoverageDetails GetCoverageDetails(string certificateNumber, string firstName, string lastName, string identifier, string authenticationKey);
+        CoverageDetails GetCoverageDetails(string certificateNumber, string authenticationKey);
     }
 }

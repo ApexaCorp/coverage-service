@@ -19,14 +19,9 @@ namespace ApexaCoverage
             };
         }
 
-        public CoverageDetails GetCoverageDetails(string certificateNumber, string firstName, string lastName, string identifier, string authenticationKey)
+        public CoverageDetails GetCoverageDetails(string certificateNumber, string authenticationKey)
         {
             if (string.IsNullOrEmpty(certificateNumber)) throw new ArgumentNullException(nameof(certificateNumber));
-            if (string.IsNullOrEmpty(identifier))
-            {
-                if (string.IsNullOrEmpty(firstName)) throw new ArgumentNullException(nameof(firstName));
-                if (string.IsNullOrEmpty(lastName)) throw new ArgumentNullException(nameof(lastName));
-            }
             if (string.IsNullOrEmpty(authenticationKey)) throw new ArgumentNullException(nameof(authenticationKey));
 
             return new CoverageDetails()
