@@ -10,11 +10,24 @@ namespace ApexaCoverage.DataContracts
     public class CoverageDetails : Coverage
     {
         /// <summary>
-        /// Advisor full name.
+        /// Advisor first name.
         /// This field should be empty if it is a corporate coverage.
         /// </summary>
         [DataMember]
-        public string FullName { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Advisor last name.
+        /// This field should be empty if it is a corporate coverage.
+        /// </summary>
+        [DataMember]
+        public string LastName { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Coverage holder unique id.
+        /// </summary>
+        [DataMember]
+        public string Identifier { get; set; }
 
         /// <summary>
         /// The legal name of the organization if corporate coverage.
